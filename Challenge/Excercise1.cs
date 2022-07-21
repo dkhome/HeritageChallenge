@@ -17,9 +17,10 @@
             if (input == null)
                 return count;
 
+            var chars = new HashSet<char>();
             foreach (var word in input)
-            { 
-                var chars = new HashSet<char>();
+            {
+                chars.Clear();
                 foreach(var ch in word)
                 {
                     if(chars.Contains(ch))
